@@ -26,7 +26,7 @@ const game = ()=> {
             hand.addEventListener("animationend", function() {
                 this.style.animation = "";
             });
-            });
+        });
         //Computer options
         const computerOptions = ["rock", "paper", "scissors"];
         
@@ -36,7 +36,6 @@ const game = ()=> {
                 const computerNumber = Math.floor(Math.random() * 3 );
                 const computerChoice = computerOptions[computerNumber];
                 
-                //here i have set timeous beause we want score to update at last.
                 setTimeout(() => {
                     //Here is where we call compare hands
                     compareHands(this.textContent, computerChoice);
@@ -51,7 +50,6 @@ const game = ()=> {
         });
     };
 
-    //updated score.
     const updateScore = () =>{
         const playerScore = document.querySelector('.player-score p');
         const computerScore = document.querySelector('.computer-score p')
@@ -108,8 +106,7 @@ const game = ()=> {
                 updateScore();
                 return;
             }
-        }
-        
+        } 
     };
 
     //here i called all the main functions
