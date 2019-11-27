@@ -15,17 +15,17 @@ const startGame = () => {
     match.classList.add("fadeIn");
     });
 };
-//player Match
-const playerMatch= () => {
+  //Player Match
+  const playerMatch = () => {
     const options = document.querySelectorAll(".options button");
-    const playerHand = document.querySelectorAll(".player-hand");
-    const computerHand = document.querySelectorAll(".computer-hand");
+    const playerHand = document.querySelector(".player-hand");
+    const computerHand = document.querySelector(".computer-hand");
     const hands = document.querySelectorAll(".hands img");
-    
+
     hands.forEach(hand => {
-        hand.addEventListener("animationend", function() {
-            this.style.animation = "";
-        });
+      hand.addEventListener("animationend", function() {
+        this.style.animation = "";
+      });
     });
     //Computer options
     const computerOptions = ["rock", "paper", "scissors"];
