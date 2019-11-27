@@ -1,19 +1,19 @@
 const game = () => {
-    let pScore=0;
-    let cScore=0;
-
-//start the game
-    const startGame =()=>{
-        const playBtn = document.querySelector(".intro button");
-        const introScreen = document.querySelector(".intro");
-        const match = document.querySelector(".match");
-
-        //function for fadeout for after clicking play button
-    
-        playBtn.addEventListener('click', ()=> {
-            introScreen.classList.add("fadeOut");
-            match.classList.add("fadeIn");
-        });
+    let pScore = 0;
+    let cScore = 0;
+  
+    //Start the Game
+    const startGame = () => {
+      const playBtn = document.querySelector(".intro button");
+      const introScreen = document.querySelector(".intro");
+      const match = document.querySelector(".match");
+  
+          //function for fadeout for after clicking play button
+  
+      playBtn.addEventListener("click", () => {
+        introScreen.classList.add("fadeOut");
+        match.classList.add("fadeIn");
+      });
     };
     //player Match
     const playerMatch= () => {
