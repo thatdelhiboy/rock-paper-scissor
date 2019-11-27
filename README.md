@@ -5,9 +5,21 @@ taken a lots refrences.
 at last i realised that;
 
 in line 21 & 22 of app.js
-    const playerHand = document.querySelectorall(".player-hand");
-    const computerHand = document.querySelectorAll(".computer-hand");
+
+
+    21.const playerHand = document.querySelectorall(".player-hand");
+    
+    
+    22.const computerHand = document.querySelectorAll(".computer-hand");
+    
+    
 I have to change to 
-    const playerHand = document.querySelector(".player-hand");
-    const computerHand = document.querySelector(".computer-hand");
-all went well ..
+
+
+    21.const playerHand = document.querySelector(".player-hand");
+    
+    
+    22.const computerHand = document.querySelector(".computer-hand");
+    
+    
+all went well .. do like 
