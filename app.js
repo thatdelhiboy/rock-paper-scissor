@@ -61,10 +61,10 @@ const   compareHands = (playerChoice, computerChoice)=> {
     //udated text
     const winner = document.querySelector('.winner');
     //checking a tie
-    if (playerChoice === computerChoice){
-        winner.textContent == 'it is a tie';
+    if (playerChoice === computerChoice) {
+        winner.textContent = "It is a tie";
         return;
-    }
+      }
     //check for rock
     if (playerChoice === 'rock'){
         if (computerChoice === 'scissors'){
